@@ -1,5 +1,6 @@
-import 'package:career_guidance/question1.dart';
 import 'package:flutter/material.dart';
+
+import 'klimov/klimov_test.dart';
 
 void main() {
   runApp(const MyApp());
@@ -52,7 +53,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       const SizedBox(height: 15),
                       const Center(
                           child: Text(
-                        'Выбор профессии',
+                        'Мамандық таңдау',
+                        // 'Выбор профессии',
                         style: TextStyle(
                             fontSize: 32,
                             fontWeight: FontWeight.w700,
@@ -60,12 +62,13 @@ class _MyHomePageState extends State<MyHomePage> {
                       )),
                       Image.asset('assets/image1.jpeg'),
                       const Text(
-                        'Пройди короткий тест в два этапа \nи получи результат',
+                        'Жекелеп диагностикалау әдістемесі',
+                        // 'Пройди короткий тест в два этапа \nи получи результат',
                         textAlign: TextAlign.center,
                         style: TextStyle(fontSize: 14),
                       ),
                       TextButton(
-                        child: const Text('Начать тест',
+                        child: const Text('Тестілеуді бастау',
                             style:
                                 TextStyle(color: Colors.white, fontSize: 18)),
                         style: ButtonStyle(
@@ -83,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const Question1Page()),
+                                builder: (context) => const KlimovTestPage()),
                           );
                         },
                       ),
